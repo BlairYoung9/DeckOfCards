@@ -12,7 +12,7 @@ namespace DeckOfCards
 
 
 
-        public Card(string stringVal, string suit, int val)
+        public Card(string suit, string stringVal, int val)
         {
             StringVal = stringVal;
             Suit= suit;

@@ -8,7 +8,10 @@ namespace DeckOfCards
         {
             System.Console.WriteLine("Here is your deck");
             Deck deck = new Deck();
+            deck.Shuffle();
             deck.Deal();
+
+
         }
     }
     
