@@ -13,19 +13,19 @@ namespace DeckOfCards
         }
         public Card Draw(Deck deck)
         {
-            Card theCard = deck.Deal();
-            Hand.Add(theCard);
-            return theCard;
+            Card Card = deck.Deal();
+            Hand.Add(Card);
+            return Card;
         }
 
-        public Card Discard(int idx)
+        public Card Discard(int index)
         {
-            Card theCard;
-            if(idx < Hand.Count)
+            Card Card;
+            if(index < Hand.Count)
             {
-                theCard = Hand[idx];
-                Hand.RemoveAt(idx);
-                return theCard;
+                Card = Hand[index];
+                Hand.RemoveAt(index);
+                return Card;
             }
             else { return null; }
         }
